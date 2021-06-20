@@ -1,0 +1,132 @@
+from elfClasses import Cardslot
+from bnwclasses import Character
+import pygame, os, random
+
+pygame.init()
+
+yellow = (73, 69, 100)
+green = (69, 73, 100)
+#The following determines the actual amount of images in each folder for error catching
+body_count = len(next(os.walk("Characters/body"))[2])
+brow_count = len(next(os.walk("Characters/brow"))[2])
+shoe_count = len(next(os.walk("Characters/shoe"))[2])
+hat_count = len(next(os.walk("Characters/hat"))[2])
+head_count = len(next(os.walk("Characters/head"))[2])
+leg_count = len(next(os.walk("Characters/leg"))[2])
+nose_count = len(next(os.walk("Characters/nose"))[2])
+#input()
+#file_count = len(files)
+
+
+def start_game():
+    pygame.display.set_caption('Gnomecraft')
+    bg = pygame.image.load("Backgrounds/Cartoon_Village.jpeg")
+    screenwidth = 1200
+    screenheight = 600
+    win = pygame.display.set_mode((screenwidth, screenheight))
+    win.blit(bg, (0, 0))
+    title = Cardslot(yellow, screenwidth / 2 - 200, 100, 400, 100, None, False, name="Spirit")
+    option1 = Cardslot(green, 100, 50, 200, 75, None, False, name="Talk")
+    option2 = Cardslot(green, option1.x, option1.y+100, 200, 75, None, False, name="Fight")
+    option3 = Cardslot(green, option2.x, option2.y+100, 200, 75, None, False, name="Keep walking")
+    options = [option1, option2, option3]
+
+    hat = Cardslot(green, 750, 150, 100, 75, None, False, name="Hat")
+    head = Cardslot(green, hat.x + 110, hat.y, 100, 75, None, False, name="Head")
+    brow = Cardslot(green, hat.x, head.y+90, 100, 75, None, False, name="Brows")
+    nose = Cardslot(green, head.x, head.y+90, 100, 75, None, False, name="Nose")
+    body = Cardslot(green, hat.x, nose.y+90, 100, 75, None, False, name="Body")
+    legs = Cardslot(green, head.x, nose.y+90, 100, 75, None, False, name="Legs")
+    shoe = Cardslot(green, hat.x, legs.y+90, 100, 75, None, False, name="Shoes")
+    randomize = Cardslot(green, head.x, legs.y+90, 100, 75, None, False, name="Randomize")
+
+    choose_buttons = [hat, head, brow, nose, body, legs, shoe, randomize]
+    #character = pygame.image.load("Characters/Gnome General.png")  # Credit Arthur Shattan
+    fhat, fhead, fbrow, fnose, fbody, flegs, fshoe = 1,1,1,1,1,1,1
+    first_char = Character("gn",fhat, fhead, fbrow, fnose, fbody, flegs, fshoe)
+    first_char.draw(win, 500, 50)
+    #win.blit(character, (500, 50))
+
+    for op in options:
+        op.draw(win, outline=True)
+
+    for part in choose_buttons:
+        part.draw(win, outline=True)
+
+    pygame.display.flip()
+    start = False
+
+    while start == False:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                quit()
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                pos = pygame.mouse.get_pos()
+                for choices in choose_buttons:
+                    if choices.isOver(pos):
+                        if choices.name == "Hat":
+                            if fhat is not hat_count:
+                                fhat += 1
+                            else:
+                                fhat = 1
+                        elif choices.name == "Head":
+                            if fhead is not head_count:
+                                fhead += 1
+                            else:
+                                fhead = 1
+                        elif choices.name == "Brows":
+                            if fbrow is not brow_count:
+                                fbrow += 1
+                            else:
+                                fbrow = 1
+                        elif choices.name == "Nose":
+                            if fnose is not nose_count:
+                                fnose += 1
+                            else:
+                                fnose = 1
+                        elif choices.name == "Body":
+                            if fbody is not body_count:
+                                fbody += 1
+                            else:
+                                fbody = 1
+                        elif choices.name == "Legs":
+                            if flegs is not leg_count:
+                                flegs += 1
+                            else:
+                                flegs = 1
+                        elif choices.name == "Shoes":
+                            if fshoe is not shoe_count:
+                                fshoe += 1
+                            else:
+                                fshoe = 1
+
+                        elif choices.name == "Randomize":
+                            fhat = random.randint(1, hat_count)
+                            fhead = random.randint(1, head_count)
+                            fbrow = random.randint(1, brow_count)
+                            fnose = random.randint(1, nose_count)
+                            fbody = random.randint(1, body_count)
+                            flegs = random.randint(1, leg_count)
+                            fshoe = random.randint(1, shoe_count)
+
+
+                redraw_screen(win, options, choose_buttons, fhat, fhead, fbrow, fnose, fbody, flegs, fshoe)
+
+
+def redraw_screen(win, options, choose_buttons, fhat, fhead, fbrow, fnose, fbody, flegs, fshoe):
+    bg = pygame.image.load("Backgrounds/Cartoon_Village.jpeg")
+    win.blit(bg, (0, 0))
+
+    for op in options:
+        op.draw(win, outline=True)
+
+    for part in choose_buttons:
+        part.draw(win, outline=True)
+
+    first_char = Character("gn", fhat, fhead, fbrow, fnose, fbody, flegs, fshoe)
+    first_char.draw(win, 500, 50)
+    pygame.display.flip()
+
+
+start_game()
