@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b44396bb-5cd5-41cb-99c1-eb78a2440c55" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ujznoV8jPfpLsg7kq7bPmLHb1T" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python">
+      <module name="Gnomecraft" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../networkgaming/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Gnomecraft/venv" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Gnomecraft/venv/BNW main" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b44396bb-5cd5-41cb-99c1-eb78a2440c55" name="Default Changelist" comment="" />
+      <created>1625194009033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625194009033</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="168" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625325761650">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="168" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.773@0.23.1280.773" timestamp="1625325761650" />
+    <state width="865" height="196" key="GridCell.Tab.0.bottom" timestamp="1625801272549">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="865" height="196" key="GridCell.Tab.0.bottom/0.23.1280.773@0.23.1280.773" timestamp="1625801272549" />
+    <state width="865" height="196" key="GridCell.Tab.0.center" timestamp="1625801272548">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="865" height="196" key="GridCell.Tab.0.center/0.23.1280.773@0.23.1280.773" timestamp="1625801272548" />
+    <state width="865" height="196" key="GridCell.Tab.0.left" timestamp="1625801272548">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="865" height="196" key="GridCell.Tab.0.left/0.23.1280.773@0.23.1280.773" timestamp="1625801272548" />
+    <state width="865" height="196" key="GridCell.Tab.0.right" timestamp="1625801272549">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="865" height="196" key="GridCell.Tab.0.right/0.23.1280.773@0.23.1280.773" timestamp="1625801272549" />
+    <state width="865" height="243" key="GridCell.Tab.1.bottom" timestamp="1625534855874">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="865" height="243" key="GridCell.Tab.1.bottom/0.23.1280.773@0.23.1280.773" timestamp="1625534855874" />
+    <state width="865" height="243" key="GridCell.Tab.1.center" timestamp="1625534855873">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="865" height="243" key="GridCell.Tab.1.center/0.23.1280.773@0.23.1280.773" timestamp="1625534855873" />
+    <state width="865" height="243" key="GridCell.Tab.1.left" timestamp="1625534855872">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="865" height="243" key="GridCell.Tab.1.left/0.23.1280.773@0.23.1280.773" timestamp="1625534855872" />
+    <state width="865" height="243" key="GridCell.Tab.1.right" timestamp="1625534855873">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="865" height="243" key="GridCell.Tab.1.right/0.23.1280.773@0.23.1280.773" timestamp="1625534855873" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Gnomecraft/venv/BNW main</url>
+          <line>205</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Gnomecraft/venv/BNW main</url>
+          <line>242</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
